@@ -794,6 +794,7 @@ input[type="checkbox"] {
 }
 
 .container-Activitesho{
+	margin:0;
 	position:relative;
 	width:100%;
 	max-width: 1000px;
