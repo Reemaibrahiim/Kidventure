@@ -1243,3 +1243,17 @@ input[type="checkbox"] {
 .more-button:hover {
     background-color: #9E4644;
 }
+.intro-box {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .intro-box {
+    max-width: 100%;
+    padding: 15px;
+  }
+}
