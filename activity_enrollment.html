@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Enrollment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navigation">
+
+        <a href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html" accesskey="h">Home</a></li>
+          <li><a href="Activities.html" accesskey="v">Activites</a></li>
+          <li><a href="coaches.html" accesskey="c">Coaches</a></li>
+          <li><a href="parent_dashboard.html" accesskey="p">Parent Dashboard</a></li>
+          <li><a href="ADMIN.html" accesskey="m">Admin Dashboard</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="breadcrumbs">
+        <a href="index.html">Home</a> > <a href="parent_dashboard.html">Parent Dashboard</a> > Activity Enrollment
+    </div>
+
+    <div class="container_Enrol">
+        <h1>Activity Enrollment</h1>
+        <p>Enroll Your Kid in Activities</p>
+
+        <div class="Enroll-a-Kid">
+
+            <form>
+                <label for="kid">Select Kid:</label>
+                <select id="kid" name="kid">
+				                <option value="">Select Kid</option>
+
+                    
+                                </select>
+
+            <label for="coach">Filter by Coach:</label>
+            <select id="coach" name="coach">
+                <option value="">Select Coach</option>
+                <option value="Sofia Martinez">Sofia Martinez</option>
+                <option value="Emily Johnson">Emily Johnson</option>
+                <option value="Yuki Tanaka">Yuki Tanaka</option>
+                <option value="Clara Wilson">Clara Wilson</option>
+                <option value="James Smith">James Smith</option>
+                <option value="Michael Brown">Michael Brown</option>
+            </select>
+
+            
+                <div class="activities">
+                    <h2 class="title">Activities</h2>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <img src="images/football2.png" alt="Football">
+                            <h3 class="card-title">Football</h3>
+                            <input type="checkbox" id="activity1" name="activity1" value="Football">
+                        </div>
+
+                        <div class="activity-item">
+                            <img src="images/ballet.png" alt="Ballet">
+                            <h3 class="card-title">Ballet</h3>
+                            <input type="checkbox" id="activity2" name="activity2" value="Ballet">
+                        </div>
+
+                        <div class="activity-item">
+                            <img src="images/Karate2.png" alt="Karate">
+                            <h3 class="card-title">Karate</h3>
+                            <input type="checkbox" id="activity3" name="activity3" value="Karate">
+                        </div>
+
+                        <div class="activity-item">
+                            <img src="images/Basketball2.png" alt="Basketball">
+                            <h3 class="card-title">Basketball</h3>
+                            <input type="checkbox" id="activity4" name="activity4" value="Basketball">
+                        </div>
+
+                        <div class="activity-item">
+                            <img src="images/drawing.png" alt="Drawing">
+                            <h3 class="card-title">Drawing</h3>
+                            <input type="checkbox" id="activity5" name="activity5" value="Drawing">
+                        </div>
+
+                        <div class="activity-item">
+                            <img src="images/swimming4.jpg" alt="Swimming">
+                            <h3 class="card-title">Swimming</h3>
+                            <input type="checkbox" id="activity6" name="activity6" value="Swimming">
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="button">Enroll</button>
+            </form>
+        </div>
+    </div>
+
+  
+    <footer>
+        <div class="footer">
+            <div class="contacts">
+                <h3>Conact us:</h3>
+                <div class="phone">
+                    <img src="images/phone-icon.png" id="phone-icon" alt="phone">
+                    <p>+9665563822982</p>
+                </div>
+                <div class="email">
+                    <a href="mailto:Kidventure@gmail.com"> <img src="images/mail.png" id="email-icon" alt="email"> </a>
+                    <a href="mailto:Kidventure@gmail.com"> Kidventure@gmail.com</a>
+                </div>
+
+                <div class="social-media">
+                    <a href="https://www.snapchat.com" target="_blank"> <img src="images/snapchat.png"
+                            id="snapchat-icon" alt="snapchat"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png"
+                            id="instagram-icon" alt="instagram"> </a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" id="twitter-icon"
+                            alt="twitter"></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 <strong>Kidventure.</strong> All rights reserved.</p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="activity_enrollment.js"></script>
+</body>
+
+</html>

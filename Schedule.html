@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coach Schedule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navigation">
+       
+        <a href="index.html"><img id="logo" src="images/logo.png" alt="logo" ></a>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html" accesskey="h">Home</a></li>
+          <li><a href="Activities.html" accesskey="v">Activites</a></li>
+          <li><a href="coaches.html" accesskey="c">Coaches</a></li>
+          <li><a href="parent_dashboard.html" accesskey="p">Parent Dashboard</a></li>
+          <li><a href="ADMIN.html" accesskey="m">Admin Dashboard</a></li>
+      </ul>
+    </nav>
+    </div>
+    
+    <div class="breadcrumbs">
+        <a href="index.html">Home</a> > <a href="ADMIN.html">Admin Dashboard</a> > <a href="Schedule.html">Coach's Schedule</a>
+    </div>
+    <script>
+
+        var today = new Date();
+
+        var dayOfWeek = today.getDay();
+        var sunday = new Date(today);
+        sunday.setDate(today.getDate() - dayOfWeek);
+
+        var formattedDate = sunday
+
+        document.write('<h2 style="background-color:#e9cc9d8a;color:#6e2d2b;text-align:center;">Week starts on: ' + formattedDate + '</h2>');
+    </script>
+
+    <h2>Coach's Schedule<br></h2>
+
+    <div class="schedule-container">
+        <table>
+            <caption>Yuki Tanaka</caption>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="Time">3:00 PM - 4:00 PM</th>
+                    <td rowspan="2">Karate Basics for Kids</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                    <td class="unavailable"></td>
+                    <td class="unavailable"></td>
+                </tr>
+                <tr>
+                    <th class="Time">4:00 PM - 5:00 PM</th>
+                    <td></td>
+                    <td colspan="2" rowspan="2">Self-Defense for Kids</td>
+                    <td></td>
+                    <td class="unavailable"></td>
+                    <td class="unavailable"></td>
+                </tr>
+                <tr>
+                    <th class="Time">5:00 PM - 6:00 PM</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="unavailable"></td>
+                    <td class="unavailable"></td>
+
+                </tr>
+                <tr>
+                    <th class="Time">6:00 PM - 7:00 PM</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Karate for Fun & Fitness</td>
+                    <td class="unavailable"></td>
+                    <td class="unavailable"></td>
+                </tr>
+                <tr>
+                    <th class="Time">7:00 PM - 8:00 PM</th>
+                    <td colspan="2" class="unavailable"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="unavailable"></td>
+                    <td class="unavailable"></td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+  	  <footer>
+        <div class="footer">
+            <div class="contacts">
+                
+                <h3>Contact us:</h3>
+                <div class="phone">
+                    <img src="images/phone-icon.png" id="phone-icon" alt="phone">
+                    
+                    <p>+9665563822982</p>
+                </div>
+                <div class="email">
+                    <a href="mailto:Kidventure@gmail.com"> <img src="images/mail.png" id="email-icon"
+                            alt="email"> </a>
+                    <a href="mailto:Kidventure@gmail.com"> Kidventure@gmail.com</a>
+                </div>
+           
+			 <div class="social-media">
+                <a href="https://www.snapchat.com" target="_blank" > <img src="images/snapchat.png" id="snapchat-icon"
+                            alt="snapchat"></a>
+                <a href="https://www.instagram.com" target="_blank" ><img src="images/instagram.png" id="instagram-icon"
+                            alt="instagram"> </a>
+                <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" id="twitter-icon"
+                            alt="twitter"></a>
+            </div>
+			 </div>
+            <div class="copyright">
+                <p>&copy; 2025 <strong>Kidventure.</strong> All rights reserved.</p>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

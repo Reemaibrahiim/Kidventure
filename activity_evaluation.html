@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Activity Evaluation</title>
+</head>
+<body>
+    <div class="navigation">
+       
+        <a href="index.html"><img id="logo" src="images/logo.png" alt="logo" ></a>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html" accesskey="h">Home</a></li>
+          <li><a href="Activities.html" accesskey="v">Activites</a></li>
+          <li><a href="coaches.html" accesskey="c">Coaches</a></li>
+          <li><a href="parent_dashboard.html" accesskey="p">Parent Dashboard</a></li>
+          <li><a href="ADMIN.html" accesskey="m">Admin Dashboard</a></li>
+      </ul>
+    </nav>
+    </div>
+    <div class="breadcrumbs">
+        <a href="index.html">Home</a> > <a href="parent_dashboard.html">Parent Dashboard</a> > Activity Evaluation
+    </div>
+
+    <div class="Activity-Evaluation">
+        <h1>Activity Evaluation</h1>
+        <form>
+            <label for="activity">Select One Activity:</label>
+            <select id="activity" name="activity" required>
+                <option value="" selected disabled>Select an Activity</option>
+                <option value="activity1">Football</option>
+                <option value="activity2">Ballet</option>
+                <option value="activity3">Karate</option>
+                <option value="activity4">Basketball</option>
+                <option value="activity5">Drawing</option>
+                <option value="activity6">Swimming</option>
+                <option value="activity6">yoga</option>
+            </select>
+
+            <div>
+                <label for="rate">Rate from 1 to 5:</label>
+                <input type="range" id="rate" name="rate" min="0" max="5" step="1" value="0">
+                <span id="rating-value">0</span>/5
+            </div>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Write your feedback here"></textarea>
+
+            <button type="submit" class="button">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="contacts">
+			<h3>Conact us:</h3>
+                <div class="phone">
+                    <img src="images/phone-icon.png" id="phone-icon" alt="phone">
+                    <p>+9665563822982</p>
+                </div>
+                <div class="email">
+                    <a href="mailto:Kidventure@gmail.com"> <img src="images/mail.png" id="email-icon"
+                            alt="email"> </a>
+                    <a href="mailto:Kidventure@gmail.com"> Kidventure@gmail.com</a>
+                </div>
+           
+			 <div class="social-media">
+                <a href="https://www.snapchat.com" target="_blank" > <img src="images/snapchat.png" id="snapchat-icon"
+                            alt="snapchat"></a>
+                <a href="https://www.instagram.com" target="_blank" ><img src="images/instagram.png" id="instagram-icon"
+                            alt="instagram"> </a>
+                <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" id="twitter-icon"
+                            alt="twitter"></a>
+            </div>
+			 </div>
+            <div class="copyright">
+                <p>&copy; 2025 <strong>Kidventure.</strong> All rights reserved.</p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="activity_evaluation.js"></script>
+</body>
+</html>

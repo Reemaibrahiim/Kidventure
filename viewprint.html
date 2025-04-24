@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Print Kid Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f8f8f8;
+        }
+        .print-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 60%;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        .print-container img {
+            max-width: 150px;
+            margin-top: 10px;
+        }
+        .print-button {
+            margin-top: 20px;
+        }
+        #close-btn {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 32px;
+            text-decoration: none;
+            color: #333;
+            background-color: #eee;
+            border-radius: 50%;
+            padding: 5px 12px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        #close-btn:hover {
+            background-color: #ffcccc;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <a href="parent_dashboard.html" id="close-btn" title="Back to Dashboard">×</a>
+
+    <div class="print-container">
+        <h2>Kid Registration Info</h2>
+		        <img id="kid-photo" alt="Kid Photo">
+        <p><strong>Name:</strong> <span id="kid-name"></span></p>
+        <p><strong>Date of Birth:</strong> <span id="kid-dob"></span></p>
+        <p><strong>Gender:</strong> <span id="kid-gender"></span></p>
+        <p><strong>Age:</strong> <span id="kid-age"></span></p>
+        <p><strong>Height:</strong> <span id="kid-height"></span> cm</p>
+        <p><strong>Weight:</strong> <span id="kid-weight"></span> kg</p>
+        <p><strong>Phone:</strong> <span id="kid-phone"></span></p>
+        <p><strong>Email:</strong> <span id="kid-email"></span></p>
+        <div class="print-button">
+            <button onclick="window.print()">Print</button>
+        </div>
+    </div>
+
+    <script>
+        const kidData = JSON.parse(localStorage.getItem("kidData"));
+        if (kidData) {
+            document.getElementById("kid-name").textContent = kidData.name;
+            document.getElementById("kid-dob").textContent = kidData.dob;
+            document.getElementById("kid-gender").textContent = kidData.gender;
+            document.getElementById("kid-age").textContent = kidData.age;
+            document.getElementById("kid-height").textContent = kidData.height;
+            document.getElementById("kid-weight").textContent = kidData.weight;
+            document.getElementById("kid-phone").textContent = kidData.phone;
+            document.getElementById("kid-email").textContent = kidData.email;
+            document.getElementById("kid-photo").src = kidData.photo;
+        } else {
+            document.body.innerHTML = "<h2>No kid data found.</h2>";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navigation">
+       
+        <a href="index.html"><img id="logo" src="images/logo.png" alt="logo" ></a>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html" accesskey="h">Home</a></li>
+          <li><a href="Activities.html" accesskey="v">Activites</a></li>
+          <li><a href="coaches.html" accesskey="c">Coaches</a></li>
+          <li><a href="parent_dashboard.html" accesskey="p">Parent Dashboard</a></li>
+          <li><a href="ADMIN.html" accesskey="m">Admin Dashboard</a></li>
+      </ul>
+    </nav>
+    </div>
+
+    <div class="breadcrumbs">
+        <a href="index.html">Home</a> > <a href="parent_dashboard.html">Parent Dashboard</a>
+    </div>
+
+    <div class="container parent-dashboard">
+        <h1>Ahmed</h1>
+        <p class="welcome">Welcome to your parent dashboard!</p>
+
+        <div class="actions">
+            <a href="register_new_kid.html">Add New Kid</a>
+            <a href="activity_enrollment.html">Enrol In Activities</a>
+            <a href="activity_evaluation.html">Activity Evaluate</a>
+        </div>
+
+       
+
+        <div class="kids-list">
+            <h2>Your Kids</h2>
+            
+            <!-- Sorting dropdown -->
+            <select id="sort-by">
+                <option value="">Sort By</option>
+                <option value="name-asc">Name (A-Z)</option>
+                <option value="name-desc">Name (Z-A)</option>
+                <option value="age-asc">Age (Youngest First)</option>
+                <option value="age-desc">Age (Oldest First)</option>
+            </select>
+            
+            <!-- Kids dropdown for actions -->
+            <select id="kids-dropdown">
+                <option value="">Select a Kid</option>
+                <!-- Will be populated by JavaScript -->
+            </select>
+            
+            <!-- Kids display container -->
+            <div id="kids-container">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+        <script src="parent_dashboard.js"></script>
+    </div>
+
+        <footer>
+            <div class="footer">
+                <div class="contacts">
+    
+                    <h3>Contact us:</h3>
+                    <div class="phone">
+                        <img src="images/phone-icon.png" id="phone-icon" alt="phone">
+                        <p>+9665563822982</p>
+                    </div>
+                    <div class="email">
+                        <a href="mailto:Kidventure@gmail.com"> <img src="images/mail.png" id="email-icon" alt="email"> </a>
+                        <a href="mailto:Kidventure@gmail.com"> Kidventure@gmail.com</a>
+                    </div>
+    
+                    <div class="social-media">
+                        <a href="https://www.snapchat.com" target="_blank"> <img src="images/snapchat.png"
+                                id="snapchat-icon" alt="snapchat"></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png"
+                                id="instagram-icon" alt="instagram"> </a>
+                        <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" id="twitter-icon"
+                                alt="twitter"></a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 <strong>Kidventure.</strong> All rights reserved.</p>
+                </div>
+            </div>
+    
+        </footer>
+</body>
+</html>
